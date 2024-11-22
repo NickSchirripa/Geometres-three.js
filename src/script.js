@@ -14,7 +14,7 @@ const scene = new THREE.Scene();
 
 const geometry = new THREE.BufferGeometry();
 
-const count = 50;
+const count = 100;
 const positionsArray = new Float32Array(count * 3 * 3);
 
 for (let i = 0; i < count * 3 * 3; i++) {
@@ -25,7 +25,7 @@ const positionAttribute = new THREE.BufferAttribute(positionsArray, 3);
 geometry.setAttribute("position", positionAttribute);
 
 const material = new THREE.MeshBasicMaterial({
-  color: 0xff0000,
+  color: 0x0000ff,
   wireframe: true,
 });
 const mesh = new THREE.Mesh(geometry, material);
